@@ -111,7 +111,7 @@ const handleSubmit = async (e) => {
           </div>
           <div className='mt-10'> 
             <p className='mt-2 text-[#666e75] text-[14px]'> Once you have created the image you want, you can share it with others in the community</p>
-            <button type='submit' className='mt-3 text-white bg-red-500 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'>{loading ? "Sharing...." : "Share with the Community"}</button>
+            <button type='submit' className='mt-3 text-white bg-blue-600 font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'>{loading ? "Sharing...." : "Share with the Community"}</button>
           </div>
       </form>
       
