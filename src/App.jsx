@@ -1,12 +1,12 @@
 import React from 'react'
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+import {HashRouter, Link, Route, Routes} from 'react-router-dom'
 
 import {logo} from './assets'
 import {Home, CreatePost} from './pages'
 
 const App = () => {
   return (
-   <BrowserRouter>
+   <HashRouter>
       <header className='w-full bg-white flex justify-between items-center sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]'>
        <Link to="/ ">
         <img src={logo} alt="logo" className='w-28 object-contain'/>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path='create-post' element={<CreatePost />} />
         </Routes>
       </main>
-   </BrowserRouter>
+   </HashRouter>
   )
 }
 
