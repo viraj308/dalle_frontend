@@ -89,7 +89,7 @@ const handleSubmit = async (e) => {
         <div>
         <FormField labelName="Your Name" type="text" name="name" placeholder="john Doe" value={form.name} handleChange={handleChange}/>
         <FormField labelName="Prompt" type="text" name="prompt" placeholder="a stained glass window depicting a hamburger and french fries" value={form.prompt} handleChange={handleChange} isSurpriseMe handleSurpriseMe={handleSurpriseMe}/>
-        <div className='relative bg-gray-50 dark:bg-[#383838] border-gray-300 dark:border-none text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p3 h-64 flex justify-center items-center mt-4'>
+        <div className='relative bg-gray-50 border dark:bg-[#383838] border-gray-300 dark:border-none text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p3 h-64 flex justify-center items-center mt-4'>
           {
             form.photo ? (
               <img src={form.photo} alt={form.prompt} className="w-full h-full object-contain" /> )
